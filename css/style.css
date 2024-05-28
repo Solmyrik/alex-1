@@ -575,6 +575,12 @@ main {
   height: 100%;
 }
 
+@media (max-height: 450px) {
+  .bg-slider__img {
+    height: 500px;
+  }
+}
+
 @-webkit-keyframes arrow {
   0% {
     bottom: 7%;
