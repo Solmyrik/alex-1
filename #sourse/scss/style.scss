@@ -1,0 +1,38 @@
+@import "_null.scss";
+@import "_mixin";
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+html {
+  &.lock {
+    overflow: hidden;
+  }
+}
+body {
+  color: $black;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+main {
+  flex: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@import "_header";
+@import "_bg-slider";
+@import "_catalog";
+@import "_footer";
